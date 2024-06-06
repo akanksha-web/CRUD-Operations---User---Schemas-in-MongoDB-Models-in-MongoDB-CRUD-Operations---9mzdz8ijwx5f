@@ -12,7 +12,7 @@ router.post('/users', async (req, res) => {
   // 3. Handle success: Respond with a 201 status code and the created user
   // 4. Handle errors: Respond with appropriate error messages and status codes
   try {
-    const users = new userModel({
+    const users = new User({
       name: req.body.name,
       email: req.body.email,
     });
